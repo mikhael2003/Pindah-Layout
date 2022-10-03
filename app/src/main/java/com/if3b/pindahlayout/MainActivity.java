@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setTitle("belajar");
+
         btnpindah = findViewById(R.id.btn_pindah);
 
         btnpindah.setOnClickListener(new View.OnClickListener() {

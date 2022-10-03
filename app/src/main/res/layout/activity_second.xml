@@ -17,5 +17,14 @@
         android:textSize="17dp"
         android:textColor="@color/teal_200"/>
 
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAMA"
+        android:layout_below="@+id/Tv_selamat_datang"
+        android:layout_centerHorizontal="true"/>
+
+    
 
 </RelativeLayout>
