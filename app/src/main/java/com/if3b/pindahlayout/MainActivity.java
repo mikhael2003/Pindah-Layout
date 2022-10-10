@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportActionBar().setTitle("belajar");
+        getSupportActionBar().setTitle("Laman 1");
 
         btnpindah = findViewById(R.id.btn_pindah);
         etnama = findViewById(R.id.et_nama);
@@ -25,9 +25,17 @@ public class MainActivity extends AppCompatActivity {
         btnpindah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent pindah = new Intent(MainActivity.this, SecondActivity.class);
-                startActivity(pindah);
+                String nama = etnama.getText().toString();
 
+                if (nama.trim().equals("")){
+                    etnama.setError("Nama Harus Diisi");
+                }
+                else {
+                    Intent pindah = new Intent(MainActivity.this, SecondActivity.class);
+                    pindah.putExtra("xnama",nama);
+                    startActivity(pindah);
+
+                }
 
             }
         });
