@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnpindah;
+    Button Btnpindah;
     EditText etnama;
 
     @Override
@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Laman 1");
 
-        btnpindah = findViewById(R.id.btn_pindah);
+        Btnpindah = findViewById(R.id.btn_pindah);
         etnama = findViewById(R.id.et_nama);
 
-        btnpindah.setOnClickListener(new View.OnClickListener() {
+        Btnpindah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String nama = etnama.getText().toString();
